@@ -1,0 +1,49 @@
+header {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.title-bar__menu {
+  margin-right: auto;
+}
+
+.title-bar__name {
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.title-bar__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.title-bar div img {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+}
+
+.title-bar__icons-ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 5px 7px 5px 7px;
+  margin-left: 8px;
+  cursor: pointer;
+}
