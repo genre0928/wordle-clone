@@ -19,3 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // 1분마다 타이머 업데이트
   setInterval(cntTime, 1000);
 });
+
+function handleOnInput(e) {
+  e.value = e.value.replace(/[^A-Za-z]/gi, "");
+}
+
+window.addEventListener("keydown", (e) => {
+  const key = document.getElementById(e.key);
+  const alpha = document.querySelectorAll(".board-block");
+  let emptyBlock = Array.from(alpha).find((block) => block.textContent === "");
+
+  if (emptyBlock) {
+    emptyBlock.innerText = e.key;
+  }
+});

@@ -7,6 +7,16 @@ main {
   flex-direction: column;
 }
 
+.timelapse {
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  left: 500px;
+  bottom: 50px;
+  border: 2px solid lightgray;
+  padding: 10px 15px 10px 15px;
+}
+
 .board-row {
   display: flex;
   justify-content: center;
@@ -21,4 +31,8 @@ main {
   border: 3px solid #d3d6da;
   width: 60px;
   height: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
 }
