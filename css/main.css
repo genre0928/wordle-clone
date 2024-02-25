@@ -8,6 +8,11 @@ main {
 }
 
 .timelapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 3rem;
   font-weight: bold;
   font-size: 30px;
   position: relative;
@@ -15,6 +20,30 @@ main {
   bottom: 50px;
   border: 2px solid lightgray;
   padding: 10px 15px 10px 15px;
+  margin-bottom: 5px;
+}
+
+.btn-media {
+  width: 15rem;
+  height: 3rem;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  left: 500px;
+  bottom: 50px;
+  border: 2px solid lightgray;
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-media__play-img,
+.btn-media__pause-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  cursor: pointer;
 }
 
 .board-row {
@@ -35,4 +64,56 @@ main {
   font-weight: bold;
   color: black;
   text-transform: uppercase;
+}
+
+.check-answer {
+  animation: rotateWords 0.7s;
+}
+
+@keyframes rotateWords {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes vibration {
+  from {
+    transform: rotate(1deg);
+  }
+  to {
+    transform: rotate(-1deg);
+  }
+}
+
+.game-over {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid red;
+  font-size: 5rem;
+  position: absolute;
+  left: 45%;
+  top: 10%;
+}
+
+.corrected {
+  background-color: #6aaa64;
+}
+
+.wronged {
+  background-color: #787c7e;
+  color: white;
+}
+
+.included {
+  background-color: #c9b458;
 }

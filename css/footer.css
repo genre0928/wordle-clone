@@ -57,3 +57,21 @@ footer {
   width: 30px;
   height: 30px;
 }
+
+.pressed {
+  background: tomato;
+  transform: scale(1.2);
+}
+
+.corrected {
+  background-color: #6aaa64;
+}
+
+.wronged {
+  background-color: #787c7e;
+  color: white;
+}
+
+.included {
+  background-color: #c9b458;
+}
